@@ -41,13 +41,36 @@ body {
   height: 70px;
   cursor: pointer;
   border: solid 1px #e1e1e1;
-  background-color: white;
+  background-color: #237cc9;
   font-size: 1.8rem;
   transition: all 250ms ease-in-out;
-  color: black;
+  color: white;
 }
 
 .boton-parque:hover {
   background-color: #1e1e1e;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+
+  .listado-parques {
+    height: 40dvh;
+    flex-basis: 1;
+  }
+
+  .map {
+    flex-basis: 1;
+    width: 100%;
+  }
+
+  .boton-parque {
+    font-size: 1.5rem;
+    height: 50px;
+  }
 }
