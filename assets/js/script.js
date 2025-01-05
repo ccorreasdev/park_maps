@@ -16,6 +16,19 @@ const parqueBancalFondo = document.querySelector("#parque-bancal");
 const parqueAlbereda = document.querySelector("#parque-albereda");
 const parqueLaCruz = document.querySelector("#parque-cruz");
 const parqueSanchisGuarner = document.querySelector("#parque-sanchis");
+const parqueGarrova = document.querySelector("#parque-garrova");
+const parqueWilfredo = document.querySelector("#parque-wilfredo");
+const parqueUva = document.querySelector("#parque-uva");
+const parqueUniuonMusical = document.querySelector("#parque-union-musical");
+const parqueEspecias = document.querySelector("#parque-especias");
+const parqueDonante = document.querySelector("#parque-donante");
+const parquePiedra = document.querySelector("#parque-piedra");
+const parquePedregal = document.querySelector("#parque-pedregal");
+const parqueUnicef = document.querySelector("#parque-unicef");
+const parqueFelix = document.querySelector("#parque-felix");
+const parqueGlorieta = document.querySelector("#parque-glorieta");
+
+
 
 let map = L.map('map').setView([38.384210, -0.766474], 16);
 
@@ -24,7 +37,52 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
+parqueGlorieta.addEventListener("click", () => {
+    map.setView([38.385273, -0.768750], zoomQuantity);
+    L.marker([38.385273, -0.768750]).addTo(map);
+})
 
+parqueFelix.addEventListener("click", () => {
+    map.setView([38.383747, -0.766189], zoomQuantity);
+    L.marker([38.383747, -0.766189]).addTo(map);
+})
+
+parqueUnicef.addEventListener("click", () => {
+    map.setView([38.382942, -0.768706], zoomQuantity);
+    L.marker([38.382942, -0.768706]).addTo(map);
+})
+
+parquePedregal.addEventListener("click", () => {
+    map.setView([38.378689, -0.769685], zoomQuantity);
+    L.marker([38.378689, -0.769685]).addTo(map);
+})
+
+
+parquePiedra.addEventListener("click", () => {
+    map.setView([38.380298, -0.765124], zoomQuantity);
+    L.marker([38.380298, -0.765124]).addTo(map);
+})
+
+parqueDonante.addEventListener("click", () => {
+    map.setView([38.380749, -0.763830], zoomQuantity);
+    L.marker([38.380749, -0.763830]).addTo(map);
+})
+
+
+parqueEspecias.addEventListener("click", () => {
+    map.setView([38.381085, -0.762196], zoomQuantity);
+    L.marker([38.381085, -0.762196]).addTo(map);
+})
+
+parqueUniuonMusical.addEventListener("click", () => {
+    map.setView([38.381503, -0.760874], zoomQuantity);
+    L.marker([38.381503, -0.760874]).addTo(map);
+})
+
+parqueUva.addEventListener("click", () => {
+    map.setView([38.381805, -0.759806], zoomQuantity);
+    L.marker([38.381805, -0.759806]).addTo(map);
+})
 
 parqueOeste.addEventListener("click", () => {
     map.setView([38.381610, -0.778151], zoomQuantity);
@@ -107,6 +165,16 @@ parqueLaCruz.addEventListener("click", () => {
 })
 
 parqueSanchisGuarner.addEventListener("click", () => {
-    map.setView([38.387754, -0.762079], zoomQuantity);
-    L.marker([38.387754, -0.762079]).addTo(map);
+    map.setView([38.386900, -0.760630], zoomQuantity);
+    L.marker([38.386900, -0.760630]).addTo(map);
+})
+
+parqueGarrova.addEventListener("click", () => {
+    map.setView([38.385188, -0.757017], zoomQuantity);
+    L.marker([38.385188, -0.757017]).addTo(map);
+})
+
+parqueWilfredo.addEventListener("click", () => {
+    map.setView([38.384026, -0.757575], zoomQuantity);
+    L.marker([38.384026, -0.757575]).addTo(map);
 })
